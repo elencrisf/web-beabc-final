@@ -1,0 +1,72 @@
+/* -------------------------------------------------------------------------- */
+/*                              CUSTOM BOOTSTRAP                              */
+/* -------------------------------------------------------------------------- */
+$theme-colors: (
+  // "custom-lightGreen": #3F795E,
+  "custom-lightGreen": rgba(0,143,57, 0.4),
+  "custom-lightYellow": #FFFFE0,
+  "custom-darkGreen": #003E17,
+  "custom-darkBlue": #002145,
+  "custom-lightBlue": #92B7FE,
+  "custom-lightRed": #FF7F7F,
+  "custom-lightOrange": #fff6ea,
+  "custom-lightGray": #f3f3f3,
+  "custom-green": #65d258,
+  "custom-orange": #fa7921,
+  "custom-yellow": #FBC100,
+  "custom-text": #13094e,
+  // "custom-red": #E82042
+  "custom-red": #c4302b,
+  "custom-white": #FFFFFF
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;800&family=Roboto:wght@300;400;700&display=swap");
+/* -------------------------------------------------------------------------- */
+/*                               STYLE VALIABLE                               */
+/* -------------------------------------------------------------------------- */
+
+@import "./valiable.scss";
+/* -------------------------------------------------------------------------- */
+/*                                GLOBAL STYLE                                */
+/* -------------------------------------------------------------------------- */
+html {
+  font-size: 62.5%;
+  color: $text;
+}
+
+body {
+  font-family: $body;
+  font-weight: $normal;
+  font-size: 1.6rem;
+  // max-width: 1140px;
+  // margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wrap {
+  max-width: 1140px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.inner-wrap {
+  width: 95%;
+  margin: 0 auto;
+}

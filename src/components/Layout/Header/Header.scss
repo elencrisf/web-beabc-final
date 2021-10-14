@@ -1,0 +1,35 @@
+@import "../../../styles/valiable.scss";
+
+// Regulations
+// 1,Don't need to compile your Scss file, because node-sass automatically compile them.
+// 2,To avoid your class-name effect others section, please put your section name on the beginning of your class name, ex).yourSectionName__container. Ps boiler-plate follows BEM naming
+// 3,Please use style-valiable defined on src/styles/global.scss, ex) .youyourSectionName__container{background-colour:$orenge}
+// 4,Please use rem instead of px, that reasons is refered on this link why rem, how to use rem ex) font-size:2rem=>font-size:20px//16px * 62.5% * 2
+
+.header {
+  background-color: white;
+  margin: 0.1rem 0;
+  box-shadow: 0 0.6rem 0.1rem -0.4rem rgba(0, 0, 0, 0.075);
+
+  // &__logo {
+  //     width: 10rem;
+  //     height: 100%;
+  // }
+
+   &__title {
+     font-size: 5rem;
+     text-align: center;
+  }
+  &__nav-link {
+    font-size: 1.5rem;
+    margin-right: 3rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__nav-link-isActive {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8) !important;
+    border-bottom: 1px $orange solid;
+  }
+}
