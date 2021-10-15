@@ -10,13 +10,14 @@ const SuccessStories = () => {
     <div>
     <Youtube />
         <div className="home__successStories__description p-5">
-          <div className="card mb-3" style={{maxWidth:"540px;"}}>
+          {/* <div className="card mb-3" style={{maxWidth:"540px;"}}> */}
+          <div className="card wrap mb-3">
           <div className="row no-gutters">
             <div className="col-md-8">
             <div className="card-body wrap mx-auto my-5 ">
               <p className="h1 card-title font-weight-bold inner-wrap mb-3">Sobre BEABC</p>
             <p className="card-text inner-wrap mb-3">         
-            A iniciativa de formar uma organização de engenheiros e arquitetos Brasileiros criando
+            "A iniciativa de formar uma organização de engenheiros e arquitetos Brasileiros criando
             a BEABC partiu no momento em que eu participava de um programa subsidiado pelo 
             governo da Columbia Britânica que oferece suporte aos profissionais imigrantes. 
             </p>
@@ -32,7 +33,7 @@ const SuccessStories = () => {
             <p className="card-text inner-wrap mb-3">
             Nos últimos 6 meses, trabalhamos juntos para desenvolver uma boa fundação e criarmos a BEABC 
             com o propósito de representar, fortalecer e integrar os profissionais brasileiros de engenharia 
-            e arquitetura na Columbia Britânica, CA.
+            e arquitetura na Columbia Britânica, CA."
             </p>
             <p className="card-text inner wrap"><small className="text-muted">
             Lillen Vater, BEng Environmental/ Co founder/ President, Agosto 2021

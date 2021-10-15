@@ -5,12 +5,14 @@ import "./successStories.scss"
 
 const Youtube = () => {
   return (
-    // <div className="content wrap py-5">
+    <div className="content wrap py-5">
       <div className="home__successStories__youtube">
       <iframe
         title="videoPlaceholder"
-        width="720"
+        width="100%"
         height="405"
+        // width="720"
+        // height="405"
         // src="https://www.youtube.com/embed/PCukxLNVC1k?controls=0"
         src="https://www.youtube.com/embed/y2Ky3Wo37AY?controls=0"
         frameBorder="0"
@@ -18,7 +20,7 @@ const Youtube = () => {
         allowFullScreen
       ></iframe>
       {/* <img alt="" src={youtube} /> */}
-    {/* </div> */}
+    </div>
       
     {/* <Youtube className="home__successStories__youtube"/> */}
         {/* <div className="home__successStories__description p-5">

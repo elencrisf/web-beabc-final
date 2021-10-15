@@ -3,7 +3,7 @@ module.exports = {
   engineerTabTitle:
     "Saiba sobre os processos de EGBC",
   engineerTabDescription:
-    "Como se registrar em EGBC para ter o título de P. Eng. ou E.I.T.",
+    "Como fazer o registro com EGBC para ter o título de P. Eng. ou E.I.T.",
   engineerCardData: [
     {
       title: "EGBC",
@@ -105,7 +105,7 @@ module.exports = {
   architectTabTitle:
     "Saiba sobre os processos de AIBC",
   architectTabDescription:
-    "Como se registrar em AIBC para ter o título de Arch AIBC e Intern AIBC.",
+    "Como fazer o registro com AIBC para ter o título de Arch AIBC e Intern AIBC.",
 
   architectCardData: [
     {
@@ -156,7 +156,7 @@ module.exports = {
     // image: "engineer-job.jpg",
     title1: "Atenção:",
     description1:
-      "Profissionais não registrados que possuem os requisitos educacionais necessários para trabalhar como projetista (Designers) em projetos de pequeno porte ou sob a supervisão de um Arquiteto AIBC em projetos de médio e grande porte, não podem fazer o uso das palavras Architectural ou Architec no seu título profissional. De acordo com o Bulletin 32 (2.2), o AIBC permite o uso dos seguintes títulos:",
+      "Profissionais não registrados que possuem os requisitos educacionais necessários para trabalhar como projetista (Designers) em projetos de pequeno porte ou sob a supervisão de um Arquiteto AIBC em projetos de médio e grande porte, não podem fazer o uso das palavras Architectural ou Architect no seu título profissional. De acordo com o Bulletin 32 (2.2), o AIBC permite o uso dos seguintes títulos:",
     description1a:
     "- B.Arch: Holder of a Diploma in Architecture;",
     description1b:
