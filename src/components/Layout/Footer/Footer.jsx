@@ -54,9 +54,9 @@ const Footer = () => {
               <li className="footer__menu-list__item">
                 <Link to="/contactUs">Contato</Link>
               </li>
-              <li className="footer__menu-list__item">
+              {/* <li className="footer__menu-list__item">
                 <Link to="/contactUs">Associe-se</Link>
-              </li>
+              </li> */}
             </ul>
           </Col>
         </Row>

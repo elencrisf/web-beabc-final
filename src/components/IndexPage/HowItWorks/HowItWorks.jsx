@@ -23,6 +23,7 @@ const HowItWorks = () => {
           socialMedia: {
             instagram,
             linkedin,
+            youtube,
             twitter
           }
         }
@@ -37,6 +38,7 @@ const HowItWorks = () => {
       socialMedia {
         instagram
         linkedin
+        youtube
         twitter
       }
     }
@@ -59,6 +61,13 @@ const HowItWorks = () => {
                 <div className="home__how__column__image">
                   <a href={linkedin} target="_blank" rel="noopper noreferrer" >
                     <Icon name="image02" />
+                  </a>
+                </div>
+        </Col>
+        <Col md={3} className="home__how__column">
+                <div className="home__how__column__image">
+                <a href={youtube} target="_blank" rel="noopper noreferrer" >
+                    <Icon name="image04" />
                   </a>
                 </div>
         </Col>

@@ -31,6 +31,7 @@ module.exports = {
     socialMedia: {
       instagram: 'https://www.instagram.com/beabc_?utm_medium=copy_link',
       linkedin: 'https://www.linkedin.com/company/beabc-canada',
+      youtube: 'https://www.youtube.com/channel/UCwCY9y5p8_7Cynaoz3O6bRg/about',
       twitter: 'https://www.twitter.com/'
     }
   },

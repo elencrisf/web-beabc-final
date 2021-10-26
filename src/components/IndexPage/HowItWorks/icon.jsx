@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 
 const Icon = (props) => {
 
-    const { image01, image02, image03 } = useStaticQuery(graphql`
+    const { image01, image02, image04, image03 } = useStaticQuery(graphql`
     query {
       image01: file(relativePath: { eq: "7.png" }) {
         childImageSharp {
@@ -15,6 +15,13 @@ const Icon = (props) => {
         }
       }
       image02: file(relativePath: { eq: "9.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 150, maxHeight: 150) {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
+      image04: file(relativePath: { eq: "9a.png" }) {
         childImageSharp {
           fluid(maxWidth: 150, maxHeight: 150) {
             ...GatsbyImageSharpFluid_tracedSVG
@@ -39,6 +46,8 @@ const Icon = (props) => {
                     return <Img fluid={image01.childImageSharp.fluid} alt="Image01"/>
                 case 'image02':
                     return <Img fluid={image02.childImageSharp.fluid} alt="Image02"/>
+                case 'image04':
+                    return <Img fluid={image04.childImageSharp.fluid} alt="Image04"/>    
                 case 'image03':
                     return <Img fluid={image03.childImageSharp.fluid} alt="Image03"/>    
                 default:
