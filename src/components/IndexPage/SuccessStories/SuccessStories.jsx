@@ -1,14 +1,15 @@
 import React from "react"
 import "./successStories.scss"
-import Youtube from "./Youtube"
+// import Youtube from "./Youtube"
 import { Link } from "gatsby"
 import { StyledButton } from "../../Elements/Elements"
 import ImgLogo from "../../../images/logo_beabcFinal.png"
 
 const SuccessStories = () => {
+
   return (
     <div>
-    <Youtube />
+    {/* <Youtube /> */}
         <div className="home__successStories__description p-5">
           {/* <div className="card mb-3" style={{maxWidth:"540px;"}}> */}
           <div className="card wrap mb-3">
@@ -36,7 +37,7 @@ const SuccessStories = () => {
             e arquitetura na Columbia Britânica, CA."
             </p>
             <p className="card-text inner wrap"><small className="text-muted">
-            Lillen Vater, BEng Environmental/ Co founder/ President, Agosto 2021
+            Lillen Vater, BEng Environmental/ Co founder/ Ex-President, Agosto 2021
             </small></p>
 
           <div className="my-3 inner wrap">

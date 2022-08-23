@@ -29,7 +29,7 @@ module.exports = {
   ],
 
   engineerSubtitle:
-    "Mais informações acesse o site da EGBC",
+    "Para maiores informações e atualizações acesse o site da EGBC",
   
   engineerLink: "https://www.egbc.ca",
 
@@ -127,7 +127,7 @@ module.exports = {
   ],
 
   architectSubtitle:
-  "Para maiores informações detalhadas e atualizadas, visite o site AIBC.",
+  "Para maiores informações e atualizações, visite o site AIBC.",
 
   architectLink: "https://aibc.ca",
 

@@ -1,5 +1,7 @@
 const path = require(`path`)
-
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 
 // const dotenv = require("dotenv")
@@ -27,7 +29,7 @@ module.exports = {
     description: `Organização de Engenheiros e Arquitetos Brasileiros em British Columbia - Canadá`,
     author: `Grupo de Trabalho BEABC`,
     copyright: `© 2020 ELEN FERREIRA | All Rights Reserved`,
-    siteUrl: `https://beabc.ca/`,
+    siteUrl: `https://www.beabc.ca/`,
     socialMedia: {
       instagram: 'https://www.instagram.com/beabc_?utm_medium=copy_link',
       linkedin: 'https://www.linkedin.com/company/beabc-canada',
@@ -39,6 +41,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -49,6 +59,23 @@ module.exports = {
         ],
         display: 'swap'
       }
+    },
+    // {
+    //   resolve: `gatsby-plugin-translate`,
+    //   options: {
+    //     googleApiKey: 'process.env.REACT_APP_GOOGLE_TRANSLATE_API_KEY', // OPTIONAL: only when Google's translation are set
+    //     sourceLanguage: 'pt',
+    //     targetLanguages: ['pt', 'en' ],
+    //     translateSlug: true, // OPTIONAL: requires Google API key
+    //   }
+    // },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `usernameId`,
+      },
+    },
+      
       // options: {
       //   fonts: [
       //     {
@@ -61,7 +88,7 @@ module.exports = {
       //     },
       //   ],
       // },
-    },
+    
     // {
     //   resolve: "gatsby-source-formspree",
     //   options: {

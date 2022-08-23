@@ -189,45 +189,49 @@ html {
 //         transform: translate3d(0, 0, 0);
 //     }
 // }
-.carousel-item:nth-child(1) {
-  background: url("../../images/homeAbout.jpeg") no-repeat center center fixed;
-  opacity: 0.9;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.carousel-item:nth-child(2) {
-  background: url("../../images/VancouverCity.jpg") no-repeat center center fixed;
-    //ununsplash.imgix.net/photo-1417021423914-070979c8eb34?q=75&fm=jpg&s=55746bd56e02a131b1e48c12196ea866) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.carousel-item:nth-child(3) {
-  background: url(//ununsplash.imgix.net/photo-1417021423914-070979c8eb34?q=75&fm=jpg&s=55746bd56e02a131b1e48c12196ea866) no-repeat center center fixed;
-  // background: url(https://ununsplash.imgix.net/reserve/oY3ayprWQlewtG7N4OXl_DSC_5225-2.jpg?q=75&fm=jpg&s=85ab821f3fa535036a68155aab571bad) no-repeat center center fixed;    
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.carousel-item:nth-child(4) {
-  background: url(https://unsplash.imgix.net/photo-1414073875831-b47709631146?q=75&fm=jpg&s=731b6d5150eea8bafa63ae8194e72ebd) no-repeat center center fixed;    
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+// .carousel-item:nth-child(1) {
+//   background: url("../../images/homeAbout.jpeg") no-repeat center center fixed;
+//   opacity: 0.9;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
+// .carousel-item:nth-child(2) {
+//   background: url("../../images/VancouverCity.jpg") no-repeat center center fixed;
+//     //ununsplash.imgix.net/photo-1417021423914-070979c8eb34?q=75&fm=jpg&s=55746bd56e02a131b1e48c12196ea866) no-repeat center center fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
+// .carousel-item:nth-child(3) {
+//   background: url(//ununsplash.imgix.net/photo-1417021423914-070979c8eb34?q=75&fm=jpg&s=55746bd56e02a131b1e48c12196ea866) no-repeat center center fixed;
+//   // background: url(https://ununsplash.imgix.net/reserve/oY3ayprWQlewtG7N4OXl_DSC_5225-2.jpg?q=75&fm=jpg&s=85ab821f3fa535036a68155aab571bad) no-repeat center center fixed;    
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
+// .carousel-item:nth-child(4) {
+//   background: url(https://unsplash.imgix.net/photo-1414073875831-b47709631146?q=75&fm=jpg&s=731b6d5150eea8bafa63ae8194e72ebd) no-repeat center center fixed;    
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
 // .carousel {
 //     z-index: -99;
 // }
-.carousel .carousel-item {
-  position: relative;
-  width: 100%;
-  height: 40em;
-}
+// .carousel .carousel-item {
+//   position: relative;
+//   width: 100%;
+//   height: 40em;
+// }
+
+
+
+//////////////////
 
 // .profile {
 //     text-align: center;

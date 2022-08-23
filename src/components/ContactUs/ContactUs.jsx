@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 import Form from "./Form/Form"
-// import CompanyInfo from "./CompanyInfo/CompanyInfo"
+import CompanyInfo from "./CompanyInfo/CompanyInfo"
 
 // import { StyledButton } from "../Elements/Elements"
 // import { Link } from "gatsby"
@@ -20,7 +20,7 @@ const ContactUs = () => {
           </Col>
 
           <Col lg={6} md={6} sm={12}>
-            {/* <CompanyInfo /> */}
+            <CompanyInfo />
           </Col>
         </Row>
       </Container>

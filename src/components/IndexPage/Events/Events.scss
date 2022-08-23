@@ -1,0 +1,200 @@
+@import "../../../styles/valiable.scss";
+
+// Styling regulation
+// 1. Please follow [bootstrap document] (https://getbootstrap.com/) [react-bootstrap] (https://react-bootstrap.github.io/).
+// 2. Don't need to compile your Scss file, because node-sass automatically compile them.
+// 3. To avoid your class-name effect others section, please put your section name on the beginning of your class name,
+//    `ex).yourSectionName__container`. Ps boiler-plate follows [BEM naming](https://css-tricks.com/using-sass-control-scope-bem-naming/)
+// 4. Please use Scss valiables defined on src/styles/valiable.scss,
+//    ex) `.yourSectionName__container{background-colour:$orenge}`, in case of Bootstrap ex) `text-custom-orange` => `color:#fa7921`
+// 5. Please use `rem` instead of `px`, that reasons is refered on this link [why rem, how to use rem](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/) ex) `font-size:2rem`=>`font-size:20px//16px * 62.5% * 2`
+// 6. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
+
+
+.event {
+  color: $text;
+  font-family: $body;
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 3rem;
+    color:#fff;
+    // font-size: 10rem;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+  &__card-items {
+
+    &__title {
+      font-family: $display;
+      margin-bottom: 0;
+    }
+    &__description {
+      position: absolute;
+      // color:#fff;
+      text-align: center;
+      margin-top: -50rem;
+      margin-left: 15%;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &__image {
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+      margin-top: 5rem;
+      margin-left: 10%;
+      width: 80%;
+      height: 80%;
+      background:url('/../../../../images/consuladoBeabc.png');
+    }
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      margin: 0 auto;
+    }
+    @media (max-width: 992px) {
+      .event {
+        width:100px;
+        margin: 0 auto;
+
+        &__card-items {
+          &__title {
+            font-family: $display;
+            margin-bottom: 0;
+            font-size: 1.5rem;
+          }
+
+          &__description {
+            position: absolute;
+            // color:#fff;
+            text-align: center;
+            margin-top: -25rem;
+            margin-left: 15%;
+            font-size: 1rem;
+            font-weight: bold;
+          }
+        }
+      }
+      
+
+      // .col {
+      //   margin-top: 3rem;
+
+      //   &__description {
+      //     position: absolute;
+      //     // color:#fff;
+      //     text-align: center;
+      //     margin-top: 10rem;
+      //     margin-left: 15%;
+      //     font-size: 2rem;
+      //     font-weight: bold;
+      //   }
+      // }
+
+    }
+    // @media (max-width: 768px) {
+    //   .card {
+    //     margin: 0;
+
+    //     &__description {
+    //       position: absolute;
+    //       // color:#fff;
+    //       text-align: center;
+    //       // margin-top: 10rem;
+    //       margin-left: 15%;
+    //       font-size: 2rem;
+    //       font-weight: bold;
+    //     }
+    //   }
+
+      // .col:nth-child(1) {
+      //   margin-top: 0;
+      // }
+      // .col:nth-child(2) {
+      //   margin-top: 0;
+      // }
+  //   }
+  //   @media (max-width: 576px) {
+  //     // .row {
+  //     //   display: block;
+  //     // }
+
+  //     // .col:nth-child(2) {
+  //     //   margin-top: 3rem;
+  //     // }
+
+  //     &__description {
+  //       position: absolute;
+  //       // color:#fff;
+  //       text-align: center;
+  //       margin-top: -50rem;
+  //       margin-left: 15%;
+  //       font-size: 2rem;
+  //       font-weight: bold;
+  //     }
+  //   }
+
+  }
+
+  &__title {
+    font-family: $display;
+  }
+}
+
+
+
+// .home__how {
+//   background-color: white;
+//   &__container {
+//     width: 95%;
+//     margin: 0 auto;
+//   }
+//   &__image {
+//     width: 10rem;
+//   }
+//   &__title {
+//     text-align: center;
+//     font-size: 5rem;
+//   }
+//   &__button {
+//     border-color: $orange;
+//     color: $orange;
+//     background-color: white;
+//   }
+//   &__button:hover {
+//     color: white;
+//     background-color: $orange;
+//   }
+//   &__column {
+//     @media (max-width: 768px) {
+//       margin-top: 4rem;
+//     }
+//     @media (max-width: 576px) {
+//       &:first-child {
+//         margin-top: 0;
+//       }
+//     }
+//     &__image {
+//       width: 30%;
+//       margin: 0 auto;
+//     }
+//     &__description {
+//       text-align: center;
+//     }
+//     &__title {
+//       font-weight: bold;
+//       color: $text;
+//       font-family: $display;
+//     }
+//     &__text {
+//       color: $text;
+//       font-size: 1.2rem;
+//     }
+//   }
+// }
