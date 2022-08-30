@@ -38,17 +38,11 @@ module.exports = {
     }
   },
   plugins: [
+    `@mediacurrent/gatsby-plugin-silence-css-order-warning`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`),
-      },
-    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -69,12 +63,12 @@ module.exports = {
     //     translateSlug: true, // OPTIONAL: requires Google API key
     //   }
     // },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `usernameId`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-instagram`,
+    //   options: {
+    //     username: `usernameId`,
+    //   },
+    // },
       
       // options: {
       //   fonts: [
@@ -124,19 +118,9 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-  
-
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/images`,
-    //   },
-    // },
-    // `gatsby-transformer-sharp`,
-    // `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

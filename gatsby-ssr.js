@@ -1,3 +1,7 @@
+// exports.onRenderBody = ({ setHtmlAttributes }) => {
+//     setHtmlAttributes({ lang: "pt" })
+//   }
+
 /**
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
  *

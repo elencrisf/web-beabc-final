@@ -1,6 +1,5 @@
 import React from "react"
-// import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import SEO from "../components/seo"
 
@@ -11,28 +10,24 @@ class SuccessStoriesPostTemplate extends React.Component {
   render() {
     // const post = this.props.data.contentfulSuccessStories
 
-    return (
-      <>
-        <SEO  />
-        {/* <SEO title={post.title} /> */}
-        <div className="successStoriesPost wrap">
-          <h1 className="title">Title</h1>
-          {/* <h1 className="title">{post.title}</h1> */}
+    return <>
+      <SEO  />
+      {/* <SEO title={post.title} /> */}
+      <div className="successStoriesPost wrap">
+        <h1 className="title">Title</h1>
+        {/* <h1 className="title">{post.title}</h1> */}
 
-          <div className="successStoriesPost__thumbnail">
-            <Img 
-            // fluid={post.thumbnail.fluid} 
-            />
-          </div>
-          <div
-            className="blogPostContent my-5"
-            // dangerouslySetInnerHTML={{
-            //   __html: post.text.childMarkdownRemark.html,
-            // }}
-          />
+        <div className="successStoriesPost__thumbnail">
+          <GatsbyImage />
         </div>
-      </>
-    )
+        <div
+          className="blogPostContent my-5"
+          // dangerouslySetInnerHTML={{
+          //   __html: post.text.childMarkdownRemark.html,
+          // }}
+        />
+      </div>
+    </>;
   }
 }
 

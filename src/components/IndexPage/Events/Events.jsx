@@ -1,7 +1,7 @@
 import React from "react"
 import "./events.scss"
-import Image from "../../Image"
-import { events } from "../../../../website/events"
+// import Image from "../../Image"
+import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import Container from "react-bootstrap/Container"
 // import Card from "react-bootstrap/Card"
@@ -9,13 +9,14 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import { StyledButton } from "../../Elements/Elements"
 import { Card } from "react-bootstrap"
+import { events } from "../../../../website/events"
 
 const Events = () => {
   return (
     <div className="event wrap">
       <Container className="mx-auto event__container">
         <div className="event__title mb-5">
-        <h1 className="text-center mb-5 font-weight-bold">
+        <h1 className="text-center mb-5 fw-bold">
           Eventos
         </h1>
         </div>
@@ -29,13 +30,14 @@ const Events = () => {
                 <Card>
                 {/* <Link to="/successStories"> */}
                 <div className="event__card-items__image">
-                  <Image filename={thumbnail} />
+                  {/* <Image filename={thumbnail} /> */}
+                  <StaticImage src="../../../images/consuladoBeabc.png" alt="event" />
                 </div>
                 {/* </Link> */}
                 <Card.Body>
                 <Link to="/successStories">
                 <div className="event__card-items__description">
-                  <h2 className="event__card-items__title font-weight-bold">{title}</h2>
+                  <h2 className="event__card-items__title fw-bold">{title}</h2>
                   <p className="event__card-items__text">{description}</p>
                   <p className="event__card-items__text">{date}</p>
                 </div>

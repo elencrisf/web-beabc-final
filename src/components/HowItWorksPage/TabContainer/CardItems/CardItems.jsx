@@ -1,7 +1,9 @@
 import React from "react"
 import "./cardItems.scss"
 import Card from "react-bootstrap/Card"
-import CardDeck from "react-bootstrap/CardDeck"
+// // import CardDeck from "react-bootstrap-card"
+// import CardDeck from "react-bootstrap/Card"
+
 export const CardItems = ({ array, green }) => {
   const cards = array.map((item, index) => (
     <Card key={item.title}>
@@ -26,7 +28,7 @@ export const CardItems = ({ array, green }) => {
   ))
   return (
     <div className="how-tabs__card-items pb-5">
-      <CardDeck>{cards}</CardDeck>
+      <div>{cards}</div>
     </div>
   )
 }

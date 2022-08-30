@@ -90,3 +90,10 @@ SEO.propTypes = {
 }
 
 export default SEO
+
+export const Head = () => (
+  <SEO>
+    <link id="icon" rel="icon" href="icon-specific-for-this-page" />
+  </SEO>
+)
+

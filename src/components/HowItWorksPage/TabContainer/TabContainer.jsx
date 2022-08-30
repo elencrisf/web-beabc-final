@@ -14,7 +14,7 @@ export const TabContainer = () => {
 
   return (
     <div className="how-tabs text-custom-text text-center text-display">
-      <h1 className="py-5 font-weight-bold how-tabs__title">{config.title}</h1>
+      <h1 className="py-5 fw-bold how-tabs__title">{config.title}</h1>
       <div>
         <Tabs
           id="controlled"
@@ -30,7 +30,7 @@ export const TabContainer = () => {
           >
             <div className="how-tabs__card-box wrap">
               <div className="how-tabs__card-box__description py-5 inner-wrap">
-                <h2 className="text-custom-text text-center font-weight-bold">
+                <h2 className="text-custom-text text-center fw-bold">
                   {config.engineerTabTitle}
                 </h2>
                 <p className="how-tabs__card-box__description__text pt-3 ">
@@ -44,7 +44,7 @@ export const TabContainer = () => {
               <div className="wrap">
                 <Row1 object={config.engineerRow1Data} />
                 <Row2 object={config.engineerRow2Data} />
-                <h2 className="text-custom-text text-center  font-weight-bold pt-5">
+                <h2 className="text-custom-text text-center  fw-bold pt-5">
                   {config.engineerSubtitle1}
                 </h2>
                 <p className="text-custom-text text-center pt-3">
@@ -57,7 +57,7 @@ export const TabContainer = () => {
                   {config.engineerSubtitle4}
                 </p>
 
-                <h2 className="text-custom-text text-center  font-weight-bold pt-5">
+                <h2 className="text-custom-text text-center  fw-bold pt-5">
                   {config.engineerSubtitle5}
                 </h2>
                 <p className="text-custom-text text-center pt-3">
@@ -69,13 +69,13 @@ export const TabContainer = () => {
                 <p className="text-custom-text text-center pt-3">
                   {config.engineerSubtitle8}
                 </p>              
-                <h2 className="text-custom-text text-center font-weight-bold pt-5">
+                <h2 className="text-custom-text text-center fw-bold pt-5">
                   {config.engineerSubtitle}
                 </h2>
                 <p className="how-tabs__card-box__description__text pb-5"><a href={config.engineerLink}>{config.engineerLink}
                   </a></p>
                 {/* <div className="text-center how-tabs__footer">
-                  <span className="text-custom-text text-center font-weight-bold mr-5 how-tabs__footer__button-text">
+                  <span className="text-custom-text text-center fw-bold mr-5 how-tabs__footer__button-text">
                     {config.enterpreneurButtonText}
                   </span>
                   <StyledButton>Associe-se</StyledButton>
@@ -91,7 +91,7 @@ export const TabContainer = () => {
           >
             <div className="how-tabs__card-box wrap">
               <div className="how-tabs__card-box__description py-5 inner-wrap">
-                <h2 className="text-custom-text text-center font-weight-bold">
+                <h2 className="text-custom-text text-center fw-bold">
                   {config.architectTabTitle}
                 </h2>
                 <p className="how-tabs__card-box__description__text pt-3 ">
@@ -105,14 +105,14 @@ export const TabContainer = () => {
               <div className="wrap">
                 <Row1 object={config.architectRow1Data} />
                 <Row2 object={config.architectRow2Data} />                
-                <h2 className="text-custom-text text-center font-weight-bold pt-5">
+                <h2 className="text-custom-text text-center fw-bold pt-5">
                   {config.architectSubtitle}
                 </h2>
                 <p className="how-tabs__card-box__description__text pb-5"><a href={config.architectLink}>{config.architectLink}
                   </a></p>
                 {/* <Row2 object={config.investorRow2Data} /> */}
                 {/* <div className="text-center how-tabs__footer inner-wrap">
-                  <span className="text-custom-text text-center font-weight-bold mr-5 how-tabs__footer__button-text">
+                  <span className="text-custom-text text-center fw-bold mr-5 how-tabs__footer__button-text">
                     {config.architectButtonText}
                   </span>
                   <StyledButton>Associe-se</StyledButton>

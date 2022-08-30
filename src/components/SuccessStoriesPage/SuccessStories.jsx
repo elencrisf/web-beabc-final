@@ -19,7 +19,7 @@ const SucessStories = () => (
             </div>
             <div className="container-fluid">
               <div className="wrap my-5 event__description">
-                  <h2 className="inner-wrap mx-auto my-3 event__title font-weight-bold">Bate Papo com o Consulado Brasileiro</h2>
+                  <h2 className="inner-wrap mx-auto my-3 event__title fw-bold">Bate Papo com o Consulado Brasileiro</h2>
                   <p className="inner-wrap mx-auto mb-3 event__text">A BEABC está organizando um evento de apresentação e networking com o Consulado Brasileiro de Vancouver.</p>
                   <p className="inner-wrap mx-auto mb-3 event__text">O evento foi aberto ao público local com vagas limitadas que já foram preenchidas. Estamos estudando a possibilidade de realizar uma live no nosso Instagram durante o evento pra que mais pessoas possam participar.</p>
                   <p className="inner-wrap mx-auto mb-3 event__text">Se você tem interesse em assistir, entre em contato com a gente ou deixe um comentário no post do Bate Papo com o Consulado Brasileiro no nosso 

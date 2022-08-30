@@ -1,11 +1,11 @@
 import React from "react"
 import "./Header.scss"
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 // import Image from "../../Image"
 
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 // import { LanguageSelector } from 'gatsby-plugin-translate'
-import { TranslateLink } from 'gatsby-plugin-translate'
+// import { TranslateLink } from 'gatsby-plugin-translate'
 import { useStaticQuery, graphql } from "gatsby";
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
@@ -14,16 +14,13 @@ import Nav from "react-bootstrap/Nav"
 const Header = ({ path }) => {
 // const Header = () => {
 
-  const { logo } = useStaticQuery(graphql`
-  query {
-    logo: file(relativePath: { eq: "logo_beabcC.png" }) {
-      childImageSharp {
-        fixed(width: 500, height: 108) {
-          ...GatsbyImageSharpFixed
-        }
-      }
+  const { logo } = useStaticQuery(graphql`{
+  logo: file(relativePath: {eq: "logo_beabcC.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 500, height: 108, layout: FIXED)
     }
   }
+}
 `)
 
   return (
@@ -31,21 +28,21 @@ const Header = ({ path }) => {
       {/* <div className="wrap"> */}
       {/* <Navbar navbar-expand-lg fixed-top navbar-dark> */}
         <Navbar collapseOnSelect expand="lg" className="py-1">
-          <Navbar.Brand as={TranslateLink} to="/">
+          <Navbar.Brand as={Link} to="/">
             <div className="header__logo">           
-                    <Img
-                    filename={"logo_beabcC.png"}
-                    fixed={logo.childImageSharp.fixed}
-                    alt="logo" />
+                    <GatsbyImage
+                      image={logo.childImageSharp.gatsbyImageData}
+                      filename={"logo_beabcC.png"}
+                      alt="logo" />
 
             </div>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
+          </Navbar.Brand >
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" className="justify-content-end" />
+          <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
             <Nav className="mr-auto"></Nav>
             <Nav>
               <Nav.Link
-                as={TranslateLink}
+                as={Link}
                 to="/aboutUs"
                 eventKey={2}
                 className={`header__nav-link ${
@@ -55,7 +52,7 @@ const Header = ({ path }) => {
                 Sobre Nós
               </Nav.Link>
               <Nav.Link
-                as={TranslateLink}
+                as={Link}
                 to="/howItWorks"
                 eventKey={2}
                 className={`header__nav-link ${
@@ -79,7 +76,7 @@ const Header = ({ path }) => {
               </Nav.Link>
 
               <Nav.Link
-                as={TranslateLink}
+                as={Link}
                 to="/successStories"
                 eventKey={2}
                 className={`header__nav-link ${
@@ -89,7 +86,7 @@ const Header = ({ path }) => {
                 Eventos
               </Nav.Link>
               <Nav.Link
-                as={TranslateLink}
+                as={Link}
                 to="/contactUs"
                 eventKey={2}
                 className={`header__nav-link ${
@@ -136,7 +133,7 @@ const Header = ({ path }) => {
         </Navbar>
       {/* </div> */}
     </header>
-  )
+  );
 }
 
 export default Header

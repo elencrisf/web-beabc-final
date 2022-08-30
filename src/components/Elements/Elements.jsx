@@ -9,7 +9,7 @@ export const StyledButton = ({ children, outline, type }) => {
   }
   return (
     <Button
-      className={`font-weight-bold btn-lg ${
+      className={`fw-bold size="lg" ${
         outline === undefined || outline === false
           ? "btn-custom-yellow  custom-text"
           : "btn-outline-custom-yellow  bg-white text-custom-yellow"
@@ -34,7 +34,7 @@ export const StyledSubmitButton = ({
   }
   return (
     <Button
-      className={`font-weight-bold btn-lg ${
+      className={`fw-bold size="lg" ${
         outline === undefined || outline === false
           ? "btn-custom-yellow  text-white"
           : "btn-outline-custom-yellow  bg-white text-custom-yellow"

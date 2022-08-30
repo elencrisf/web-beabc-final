@@ -1,7 +1,6 @@
 import React from "react"
 import "./footer.scss"
-// import Image from "../../Image"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import { useStaticQuery, graphql } from "gatsby";
 import { Link } from "gatsby"
 import Container from "react-bootstrap/Container"
@@ -10,16 +9,13 @@ import Col from "react-bootstrap/Col"
 
 const Footer = () => {
 
-  const { logo } = useStaticQuery(graphql`
-  query {
-    logo: file(relativePath: { eq: "logo_beabcFinal.png" }) {
-      childImageSharp {
-        fixed(width: 70, height: 70) {
-          ...GatsbyImageSharpFixed
-        }
-      }
+  const { logo } = useStaticQuery(graphql`{
+  logo: file(relativePath: {eq: "logo_beabcFinal.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 70, height: 70, layout: FIXED)
     }
   }
+}
 `)
   
   return (
@@ -33,10 +29,7 @@ const Footer = () => {
             xs={{ span: 6 }}
             className="align-self-center"
           ><Link to="/">
-            <Img
-            fixed={logo.childImageSharp.fixed}
-            // filename={"logoB.png"} 
-            /></Link>
+            <GatsbyImage image={logo.childImageSharp.gatsbyImageData} /></Link>
           </Col>
 
           <Col md={{ span: 6, offset: 1 }} xs={{ span: 6 }}>
@@ -62,7 +55,7 @@ const Footer = () => {
         </Row>
       </Container>
     </footer>
-  )
+  );
 }
 
 export default Footer

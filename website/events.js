@@ -7,7 +7,7 @@ module.exports = {
           "Local: Embaixada Brasileira - Downtown, Vancouver",
         date:
         "16 de setembro 2022 - 5PM",
-        eventLink: "/src/components/SuccessStoriesPage/SuccessStories.jsx"
+        eventLink: "SuccessStoriesPage/SuccessStories.jsx"
       },
       // {
       //   title: "Live Canadá Diário e BEABC",

@@ -1,6 +1,7 @@
 import React from "react"
 import "./aboutUs.scss"
-import Image from "../Image"
+import { StaticImage } from "gatsby-plugin-image"
+// import Image from "../Image"
 // import Img from "gatsby-image"
 // import { StyledButton } from "../Elements/Elements"
 // import { Link } from "gatsby"
@@ -51,17 +52,14 @@ import Banner2 from "./aboutUs_banner2"
 // const AboutUs = ({ className, children }) => (
   const AboutUs = () => (
   <StaticQuery
-    query={graphql`
-      query {
-        file(relativePath: { eq: "IMG_0622.jpg" }) {
-          childImageSharp {
-            fluid(quality: 90) {
-              ...GatsbyImageSharpFluid_withWebp_noBase64
-            }
-          }
-        }
-      }
-    `}
+    query={graphql`{
+  file(relativePath: {eq: "IMG_0622.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 90, placeholder: NONE, layout: FULL_WIDTH)
+    }
+  }
+}
+`}
     
      render={data => {
        // Set ImageData.
@@ -85,7 +83,7 @@ import Banner2 from "./aboutUs_banner2"
                    <Banner1 className="aboutUs__banner__bgc1" />
           </div>
           <div className="wrap mx-auto my-5 ">
-                  <p className="h1 font-weight-bolder">Quem somos</p>
+                  <p className="h1 fw-bolder">Quem somos</p>
                   <p className="inner-wrap">
                   Fundada em 2021, somos uma organização sem fins lucrativos de brasileiros Engenheiros e Arquitetos, registrados e não registrados
                   com EGBC (Engineers & Geoscientists British Columbia) e AIBC (Architectural Institute of British Columbia) que residem em British
@@ -94,7 +92,7 @@ import Banner2 from "./aboutUs_banner2"
                   <br />
                 </div>
           <div className="wrap mx-auto my-5 ">
-              <p className="h1 font-weight-bolder">Nossa Visão</p>
+              <p className="h1 fw-bolder">Nossa Visão</p>
               <p className="inner-wrap">
               Oferecer suporte, inspiração e informação para os engenheiros e arquitetos brasileiros
               que queiram (re)construir suas carreiras em British Columbia, Canada.
@@ -102,7 +100,7 @@ import Banner2 from "./aboutUs_banner2"
               <br />
           </div>
           <div className="wrap mx-auto my-5">
-                  <p className="h1 font-weight-bolder">Nossa Missão</p>
+                  <p className="h1 fw-bolder">Nossa Missão</p>
                   <p className="inner-wrap">
                   Unir e integrar os arquitetos e engenheiros brasileiros à indústria canadense em British
                   Columbia.
@@ -113,31 +111,31 @@ import Banner2 from "./aboutUs_banner2"
                  <div className="row justify-content-lg-between inner-wrap justify-content-md-center justify-content-center">
                    <div className="col-lg-2 col-md-4 col-sm-6">
                      <div className="aboutUs__icon">
-                       <Img filename={"aboutUs_icon1.png"} alt="icon1" />
+                       <Img src={"aboutUs_icon1.png"} alt="icon1" />
                      </div>
                      <p className="h4">Embrace</p>
                     </div>
                    <div className="col-lg-2 col-md-4 col-sm-6">
                     <div className="aboutUs__icon">
-                      <Img filename={"aboutUs_icon2.png"} alt="icon2" />
+                      <Img src={"aboutUs_icon2.png"} alt="icon2" />
                     </div>
                     <p className="h4">Learning</p>
                    </div>
                    <div className="col-lg-2 col-md-4 col-sm-6">
                      <div className="aboutUs__icon">
-                       <Img filename={"aboutUs_icon3.png"} alt="icon3" />
+                       <Img src={"aboutUs_icon3.png"} alt="icon3" />
                      </div>
                      <p className="h4">Learning</p>
                    </div>
                    <div className="col-lg-2 col-md-4 col-sm-6">
                      <div className="aboutUs__icon">
-                       <Img filename={"aboutUs_icon4.png"} alt="icon4" />
+                       <Img src={"aboutUs_icon4.png"} alt="icon4" />
                      </div>
                      <p className="h4">Relationships</p>
                    </div>
                    <div className="col-lg-2 col-md-4 col-sm-6">
                      <div className="aboutUs__icon">
-                       <Img filename={"aboutUs_icon5.png"} alt="icon5" />
+                       <Img src={"aboutUs_icon5.png"} alt="icon5" />
                      </div>
                      <p className="h4">Together</p>
                    </div>
@@ -152,7 +150,7 @@ import Banner2 from "./aboutUs_banner2"
     </div> */}
     <div className="col-md-12">
       <div className="card-body wrap mb-5">
-        <p className="h1 font-weight-bold card-title m-5">Propósitos BEABC</p>
+        <p className="h1 fw-bold card-title m-5">Propósitos BEABC</p>
             <p className="mb-3">
             Representar engenheiros e arquitetos brasileiros na Colúmbia Britânica e aumentar suas
             contribuições para o sucesso da profissão de engenheiro na Colúmbia Britânica, Canadá.
@@ -201,7 +199,7 @@ import Banner2 from "./aboutUs_banner2"
           <div className="aboutUs__banner">
             <Banner2 className="aboutUs__banner__bgc2">
               <div className="wrap mx-auto">
-                <p className="h1 font-weight-bolder">
+                <p className="h1 fw-bolder">
                 Nossos Valores
                 </p>
                 <br />
@@ -223,24 +221,24 @@ import Banner2 from "./aboutUs_banner2"
 
                 {/* <div className="row wrap justify-content-around mt-5">
             <div className="col-md-3 col-sm-6 aboutUs__banner__item">
-              <p className="display-4 font-weight-bolder">Social
+              <p className="display-4 fw-bolder">Social
               </p>
               <p className="h3">Social</p>
             </div>
             <div className="col-md-3 col-sm-6 aboutUs__banner__item">
-              <p className="display-4 font-weight-bolder">
+              <p className="display-4 fw-bolder">
               Business
               </p>
               <p className="h3">Business</p>
             </div>
             <div className="col-md-3 col-sm-6 aboutUs__banner__item">
-              <p className="display-4 font-weight-bolder">
+              <p className="display-4 fw-bolder">
               Founders
               </p>
               <p className="h3">Founders</p>
             </div>
             <div className="col-md-3 col-sm-6 aboutUs__banner__item">
-              <p className="display-4 font-weight-bolder">
+              <p className="display-4 fw-bolder">
               $ 
               </p>
               <p className="h3">total funds collected</p>
@@ -251,7 +249,7 @@ import Banner2 from "./aboutUs_banner2"
           </div>
 
           <div className="wrap mx-auto mt-5 aboutUs__members">
-          <p className="h1 font-weight-bolder">Nosso Time</p>
+          <p className="h1 fw-bolder">Nosso Time</p>
           <p className="inner-wrap">
           Formado por engenheiros e arquitetos brasileiros com interesse em colaborar com orientação sobre os processos de EGBC (Engineers
           & Geocientists British Columbia) e AIBC (Architectural Institute of British Columbia).
@@ -259,52 +257,52 @@ import Banner2 from "./aboutUs_banner2"
           <div className="container m-5 inner-wrap">
            <div className="row justify-content-around">
            <div className="col-md-3 col-sm-6">
-                    <Image filename={"Alexandra.jpeg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Alexandra.jpeg" alt="Alexandra" />
                   </div>
                  <div className="col-md-3 col-sm-6">
-                    <Image filename={"Brenan.jpg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Brenan.jpg" alt="Alexandra" />
                   </div>
                   <div className="col-md-3 col-sm-6">
-                    <Image filename={"Daniel.jpeg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Daniel.jpeg" alt="Alexandra" />
                   </div>
                   <div className="col-md-3 col-sm-6">
-                    <Image filename={"Elen.jpeg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Elen.jpeg" alt="Alexandra" />
                   </div>
                   <div className="col-md-3 col-sm-6">
-                    <Image filename={"Erin.jpg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Erin.jpg" alt="Alexandra" />
                   </div>
                  <div className="col-md-3 col-sm-6">
-                    <Image filename={"Fabiano.jpeg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Fabiano.jpeg" alt="Alexandra" />
                   </div>
                   <div className="col-md-3 col-sm-6">
-                    <Image filename={"Helena.jpg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Helena.jpg" alt="Alexandra" />
                   </div>
                   <div className="col-md-3 col-sm-6">
-                    <Image filename={"Julliana.jpg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Julliana.jpg" alt="Alexandra" />
                   </div>
                  <div className="col-md-3 col-sm-6">
-                    <Image filename={"Kalin.jpg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Kalin.jpg" alt="Alexandra" />
                   </div>
                   <div className="col-md-3 col-sm-6">
-                    <Image filename={"Katiussa.jpeg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Katiussa.jpeg" alt="Alexandra" />
                   </div>
                   <div className="col-md-3 col-sm-6">
-                    <Image filename={"Lillen.jpg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Lillen.jpg" alt="Alexandra" />
                   </div>
                   <div className="col-md-3 col-sm-6">
-                    <Image filename={"Luis.jpg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Luis.jpg" alt="Alexandra" />
                   </div>
                   <div className="col-md-3 col-sm-6">
-                    <Image filename={"Rafael.jpg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Rafael.jpg" alt="Alexandra" />
                   </div>
                   <div className="col-md-3 col-sm-6">
-                    <Image filename={"Thalita.jpg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Thalita.jpg" alt="Alexandra" />
                   </div>
                   <div className="col-md-3 col-sm-6">
-                    <Image filename={"Thiago.jpeg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Thiago.jpeg" alt="Alexandra" />
                   </div>
                   <div className="col-md-3 col-sm-6">
-                    <Image filename={"Yegor.jpg"} alt="Alexandra" />
+                    <StaticImage src="../../images/aboutTeam/Yegor.jpg" alt="Alexandra" />
                   </div>
 
 
@@ -314,7 +312,7 @@ import Banner2 from "./aboutUs_banner2"
                     {/* <Img Tag="section" className={className} fluid={imageData}>
                     {children}
                     </Img> */}
-                    {/* <Image filename={"08.jpg"} alt="alexandra" />
+                    {/* <Image src={"08.jpg"} alt="alexandra" />
                     <div className="aboutUs__label"> */}
                      {/* <span className="aboutUs__label__name">Name</span> */}
                      {/* <span className="aboutUs__label__name">Alexandra Rhod</span> |{" "} */}
@@ -328,7 +326,7 @@ import Banner2 from "./aboutUs_banner2"
           </div>
 
        {/* <div className="wrap mx-auto mt-5 aboutUs__members">
-         <p className="h1 font-weight-bolder">Our Team</p>
+         <p className="h1 fw-bolder">Our Team</p>
          <p className="inner-wrap">
            We bring a wealth of experience from social enterprise, start-ups,
            organizations, and non-profit sectors. Meet the team who set our

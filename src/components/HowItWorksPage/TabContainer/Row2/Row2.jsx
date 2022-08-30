@@ -25,7 +25,7 @@ export const Row2 = ({ object }) => {
             >
               <ul className="mb-5">
                 <li>
-                  <h2 className="text-custom-text font-weight-bold ">
+                  <h2 className="text-custom-text fw-bold ">
                     {object.title1}
                   </h2>
                   <p className="pt-3 how-row1__description">
@@ -47,7 +47,7 @@ export const Row2 = ({ object }) => {
               </ul>
               <ul>
                 <li>
-                  <h2 className="text-custom-text font-weight-bold ">
+                  <h2 className="text-custom-text fw-bold ">
                     {object.title2}
                   </h2>
                   <p className="pt-3 how-row1__description">
@@ -56,11 +56,11 @@ export const Row2 = ({ object }) => {
                 </li>
               </ul>
               <ul>
-              <h2 className="pt-5 text-custom-text font-weight-bold ">
+              <h2 className="pt-5 text-custom-text fw-bold ">
                     {object.architectText}
                   </h2>
                 <li>
-                  <h2 className="pt-5 text-custom-text font-weight-bold ">
+                  <h2 className="pt-5 text-custom-text fw-bold ">
                     {object.title3}
                   </h2>
                   <p className="pt-3 how-row1__description">
@@ -74,7 +74,7 @@ export const Row2 = ({ object }) => {
                   </p>
                 </li>
                 <li>
-                  <h2 className="pt-5 text-custom-text font-weight-bold ">
+                  <h2 className="pt-5 text-custom-text fw-bold ">
                     {object.title4}
                   </h2>
                   <p className="pt-3 how-row1__description">
@@ -88,10 +88,10 @@ export const Row2 = ({ object }) => {
                   </p>
                 </li>
                 <li>
-                <h2 className="pt-5 text-custom-text font-weight-bold ">
+                <h2 className="pt-5 text-custom-text fw-bold ">
                     {object.title5}
                   </h2>
-                  <h3 className="pt-5 text-custom-text font-weight-bold ">
+                  <h3 className="pt-5 text-custom-text fw-bold ">
                     {object.subtitle5a}
                   </h3>
                   <p className="pt-3 how-row1__description">
@@ -100,7 +100,7 @@ export const Row2 = ({ object }) => {
                   <p className="pt-3 how-row1__description">
                     {object.description8}
                   </p>
-                  <h3 className="pt-5 text-custom-text font-weight-bold ">
+                  <h3 className="pt-5 text-custom-text fw-bold ">
                     {object.subtitle5b}
                   </h3>
                   <p className="pt-3 how-row1__description">
@@ -110,7 +110,7 @@ export const Row2 = ({ object }) => {
               </ul>
               {/* <ul className="how-row2__list-2">
                 <li>
-                  <h2 className="text-custom-text font-weight-bold ">
+                  <h2 className="text-custom-text fw-bold ">
                     {object.title2}
                   </h2>
                   <p className="pt-3 how-row1__description">
@@ -127,7 +127,7 @@ export const Row2 = ({ object }) => {
               className="text-left d-flex align-items-center how-row2__text-box"
             >
               <div>
-                <h2 className="text-custom-text font-weight-bold ">
+                <h2 className="text-custom-text fw-bold ">
                   {object.title}
                 </h2>
                 <p className="pt-3 how-row2__description">

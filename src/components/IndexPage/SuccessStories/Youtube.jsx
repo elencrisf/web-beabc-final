@@ -24,7 +24,7 @@ const Youtube = () => {
       
     {/* <Youtube className="home__successStories__youtube"/> */}
         {/* <div className="home__successStories__description p-5">
-            <h1 className="font-weight-bold">
+            <h1 className="fw-bold">
               Em construção
             </h1>
           <div className="my-3"> */}

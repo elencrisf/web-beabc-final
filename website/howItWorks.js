@@ -34,7 +34,7 @@ module.exports = {
   engineerLink: "https://www.egbc.ca",
 
   engineerRow1Data: {
-    image: "engineerRow1Data.jpg",
+    image: "../src/images/engineerRow1Data.jpg",
     
     title1: "P. Eng. (Professional Engineer)",
     description1:

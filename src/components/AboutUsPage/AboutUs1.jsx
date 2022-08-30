@@ -81,7 +81,7 @@
 //         <Banner1 className="aboutUs__banner__bgc1" />
 //       </div>
 //       <div className="wrap mx-auto my-5 ">
-//         <p className="h1 font-weight-bolder">About Us</p>
+//         <p className="h1 fw-bolder">About Us</p>
 //         <p className="inner-wrap">
 //           We want to help you.
 //         </p>
@@ -91,7 +91,7 @@
 //         <br />
 //       </div>
 //       <div className="wrap mx-auto my-5">
-//         <p className="h1 font-weight-bolder">What We Do</p>
+//         <p className="h1 fw-bolder">What We Do</p>
 //         <p className="inner-wrap">
 //           We help people.
 //           <br /> We give support, we give support.
@@ -136,32 +136,32 @@
 //       <div className="aboutUs__banner">
 //         <Banner2 className="aboutUs__banner__bgc2">
 //           <div className="wrap mx-auto">
-//             <p className="h1 font-weight-bolder">
+//             <p className="h1 fw-bolder">
 //               We believe, we believe.
 //             </p>
 //             <div className="row wrap justify-content-around mt-5">
 //               <div className="col-md-3 col-sm-6 aboutUs__banner__item">
-//                 <p className="display-4 font-weight-bolder">Entrepreneurs
+//                 <p className="display-4 fw-bolder">Entrepreneurs
 //                   {/* {impactStats.socialEntrepreneursMobilized} */}
 //                 </p>
 //                 <p className="h3">Entrepreneurs</p>
 //               </div>
 //               <div className="col-md-3 col-sm-6 aboutUs__banner__item">
-//                 <p className="display-4 font-weight-bolder">
+//                 <p className="display-4 fw-bolder">
 //                   Business
 //                   {/* {impactStats.businessesFunded} */}
 //                 </p>
 //                 <p className="h3">Business</p>
 //               </div>
 //               <div className="col-md-3 col-sm-6 aboutUs__banner__item">
-//                 <p className="display-4 font-weight-bolder">
+//                 <p className="display-4 fw-bolder">
 //                   Investors
 //                   {/* {impactStats.impactInvestors} */}
 //                 </p>
 //                 <p className="h3">Inverstors</p>
 //               </div>
 //               <div className="col-md-3 col-sm-6 aboutUs__banner__item">
-//                 <p className="display-4 font-weight-bolder">
+//                 <p className="display-4 fw-bolder">
 //                 $ million
 //                   {/* ${impactStats.totalFundsCollected} dollars */}
 //                 </p>
@@ -173,7 +173,7 @@
 //       </div>
 
 //       <div className="wrap mx-auto mt-5 aboutUs__members">
-//         <p className="h1 font-weight-bolder">Our Team</p>
+//         <p className="h1 fw-bolder">Our Team</p>
 //         <p className="inner-wrap">
 //           What we do, what we do, what we do.
 //         </p>

@@ -3,7 +3,8 @@ import "./successStories.scss"
 // import Youtube from "./Youtube"
 import { Link } from "gatsby"
 import { StyledButton } from "../../Elements/Elements"
-import ImgLogo from "../../../images/logo_beabcFinal.png"
+import { StaticImage } from "gatsby-plugin-image"
+// import ImgLogo from "../../../images/logo_beabcFinal.png"
 
 const SuccessStories = () => {
 
@@ -16,7 +17,7 @@ const SuccessStories = () => {
           <div className="row no-gutters">
             <div className="col-md-8">
             <div className="card-body wrap mx-auto my-5 ">
-              <p className="h1 card-title font-weight-bold inner-wrap mb-3">Sobre BEABC</p>
+              <p className="h1 card-title fw-bold inner-wrap mb-3">Sobre BEABC</p>
             <p className="card-text inner-wrap mb-3">         
             "A iniciativa de formar uma organização de engenheiros e arquitetos Brasileiros criando
             a BEABC partiu no momento em que eu participava de um programa subsidiado pelo 
@@ -51,7 +52,8 @@ const SuccessStories = () => {
           </div> 
           </div>
             <div className="col-md-4">
-              <img src={ImgLogo} className="card-img" alt="logo_beabc"></img>
+              {/* <img src={ImgLogo} className="card-img" alt="logo_beabc"></img> */}
+              <StaticImage src="../../../images/logo_beabcFinal.png" className="card-img" alt="logo_beabc" />
             </div>
             </div>       
         </div>
